@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ListCategoriesComponent } from './list-categories/list-categories.component';
+import { HighliterDirective } from './highliter.directive';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,15 @@ import { ListCategoriesComponent } from './list-categories/list-categories.compo
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ListCategoriesComponent
+    ListCategoriesComponent,
+    HighliterDirective,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule 
+
   ],
   providers: [],
   bootstrap: [AppComponent]
